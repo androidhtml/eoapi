@@ -1,1 +1,7 @@
-<nz-result [nzIcon]="'smile-twotone'" [nzTitle]="'即将发布，敬请期待'"> <div nz-result-extra></div> </nz-result>
+<section class="w-full py-20 flex items-center justify-center border">
+  <a class="" *ngFor="let item of downloadList" [href]="item.link">
+    <i></i>
+    <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>
+    <span></span>
+  </a>
+</section>
